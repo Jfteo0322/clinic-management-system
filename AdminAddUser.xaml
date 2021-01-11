@@ -1,0 +1,124 @@
+﻿<UserControl x:Class="AdminAddUser"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Oceana_Clinic_Management"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             Background="#FFECECEC"
+             FontFamily="{materialDesign:MaterialDesignFont}"
+             mc:Ignorable="d" 
+             d:DesignHeight="710" d:DesignWidth="965">
+
+    <!--Main Background Grid-->
+    <Grid Width="965" Height="710">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="87*"/>
+            <RowDefinition Height="268*"/>
+        </Grid.RowDefinitions>
+
+        <!--Header Shape-->
+        <Ellipse Fill="#FF586FFF" Margin="0,12,0,52"/>
+        <Rectangle Fill="#FF586FFF" Margin="0,0,0,102"/>
+
+        <!--Heading Title-->
+        <TextBlock FontSize="45" 
+                   FontWeight="ExtraBold" 
+                   Foreground="White" 
+                   HorizontalAlignment="Center" 
+                   Margin="324,32,324,64">
+                   Add User
+        </TextBlock>
+
+        <!--User details Card-->
+        <materialDesign:Card
+            Background="White"
+            UniformCornerRadius="7"
+            materialDesign:ShadowAssist.ShadowDepth="Depth2" Margin="56,162,55,50" Grid.RowSpan="2"/>
+
+        <!--User details text-->
+        <TextBlock 
+            FontSize="38"
+            FontWeight="Light" 
+            Foreground="#FF616161" Margin="370,30,369,452" Grid.Row="1">
+            User Details
+        </TextBlock>
+
+        <!--Username textbox-->
+        <TextBox
+            x:Name="txtUsername"
+            materialDesign:HintAssist.Hint="Username"
+            FontSize="20"
+            FontWeight="Regular"    
+            Foreground="#FF616161"
+            Style="{StaticResource MaterialDesignFloatingHintTextBox}"
+            Margin="170,98,513,390" 
+            Grid.Row="1" />
+
+        <!--Password Textbox-->
+        <PasswordBox
+            x:Name="txtPassword"
+            materialDesign:HintAssist.Hint="Password"
+            FontSize="20"
+            Foreground="#FF616161"
+            FontWeight="Regular"
+            materialDesign:TextFieldAssist.UnderlineBrush="Gray"
+            Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" Margin="170,174,513,314" Grid.Row="1"/>
+
+        <!--Email textbox-->
+        <TextBox
+            x:Name="txtEmail"
+            materialDesign:HintAssist.Hint="Email"
+            FontSize="20"
+            FontWeight="Regular"    
+            Foreground="#FF616161"
+            Style="{StaticResource MaterialDesignFloatingHintTextBox}"
+            Margin="515,98,168,390" 
+            Grid.Row="1" />
+
+        <!--Display name textbox-->
+        <TextBox
+            x:Name="txtDisplayName"
+            materialDesign:HintAssist.Hint="Display Name"
+            FontSize="20"
+            FontWeight="Regular"    
+            Foreground="#FF616161"
+            Style="{StaticResource MaterialDesignFloatingHintTextBox}"
+            Margin="515,174,168,314" 
+            Grid.Row="1" />
+
+        <!--Select user level combobox-->
+        <ComboBox
+            x:Name="cboUserLevel"
+            materialDesign:HintAssist.Hint="Select User Level"
+            FontSize="20"
+            Foreground="#FF616161"
+            Width="300"
+            HorizontalAlignment="Center" Margin="334,273,331,227" Grid.Row="1">
+        </ComboBox>
+
+        <!--Add User Button-->
+        <Button
+            x:Name="btnAddUser"
+            Style="{StaticResource MaterialDesignRaisedDarkButton}"
+            Height="50"
+            Width="300"
+            Background="#FF586FFF"
+            HorizontalAlignment="Center"
+            materialDesign:ShadowAssist.ShadowDepth="Depth3"
+            materialDesign:ButtonAssist.CornerRadius="25" 
+            Margin="334,376,331,110" Grid.Row="1">
+
+            <!--Button text-->
+            <TextBlock Text="Add User" FontWeight="Bold" FontSize="20" />
+        </Button>
+
+        <!--Message snackbar-->
+        <materialDesign:Snackbar
+            x:Name="msgSnackbar"
+            Margin="341,0,336,0" Grid.Row="1"/>
+
+    </Grid>
+
+
+</UserControl>

@@ -1,0 +1,83 @@
+﻿  <Window x:Class="MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Oceana_Clinic_Management"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{materialDesign:MaterialDesignFont}"
+        mc:Ignorable="d"
+        Title="Login" Height="604" Width="402" WindowStyle="None" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" AllowsTransparency="True">
+    <Grid Background="#FFEEEEEE">
+
+        <!--Username TextBox-->
+        <TextBox
+            x:Name="txtUsername"
+            materialDesign:HintAssist.Hint="Username"
+            FontSize="20"
+            FontWeight="Regular"
+            Style="{StaticResource MaterialDesignFloatingHintTextBox}" 
+            Margin="108,216,38,345" />
+        
+        <materialDesign:PackIcon Kind="UserTie" 
+                                 Height="40" 
+                                 Width="40" 
+                                 Foreground="Gray" 
+                                 Margin="45,224,0,0"/>
+
+        <!--Password Textbox-->
+        <PasswordBox
+           x:Name="txtPassword"
+           materialDesign:HintAssist.Hint="Password"
+           FontSize="20"
+           FontWeight="Regular"
+           materialDesign:TextFieldAssist.UnderlineBrush="Gray"
+           Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" Margin="110,289,36,253" />
+        
+        <materialDesign:PackIcon Kind="Lock" 
+                                 Height="40" 
+                                 Width="40" 
+                                 Foreground="Gray" 
+                                 Margin="45,313,0,0"/>
+
+        <!--Login Button-->
+        <Grid
+           Width="124">
+            <Button
+                x:Name="btnLogin"
+                Style="{StaticResource MaterialDesignRaisedDarkButton}"
+                materialDesign:ShadowAssist.ShadowDepth="Depth3"
+                Height="Auto" 
+                materialDesign:ButtonAssist.CornerRadius="25"
+                Margin="-58,442,-63,106" 
+                Background="#FF586FFF" 
+                Click="btnLogin_Click">
+                <TextBlock
+                  Text="LOGIN" FontSize="15"/>
+            </Button>
+        </Grid>
+
+        <!--Oceana Logo-->
+        <Image Source="Oceana Logo.png" Height="300" Margin="43,-36,42,332"/>
+
+        <!--Exit Button-->
+        <Button x:Name="btnExit" 
+                Style="{StaticResource MaterialDesignIconButton}" 
+                Height="Auto" 
+                Width="Auto" 
+                Margin="352,16,16,559">
+            
+            <materialDesign:PackIcon Kind="CloseCircleOutline" 
+                                     Height="30" 
+                                     Width="30" 
+                                     Foreground="#FF586FFF"/>
+        </Button>
+
+        <!--Message snackbar-->
+        <materialDesign:Snackbar
+            x:Name="msgSnackbar"/>
+        
+    </Grid>
+</Window>

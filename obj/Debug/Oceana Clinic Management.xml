@@ -1,0 +1,213 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Oceana Clinic Management
+</name>
+</assembly>
+<members>
+<member name="T:Oceana_Clinic_Management.My.MyWpfExtension">
+ <summary>
+ Module used to define the properties that are available in the My Namespace for WPF
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Oceana_Clinic_Management.My.MyWpfExtension.Application">
+ <summary>
+ Returns the application object for the running application
+ </summary>
+</member>
+<member name="P:Oceana_Clinic_Management.My.MyWpfExtension.Computer">
+ <summary>
+ Returns information about the host computer.
+ </summary>
+</member>
+<member name="P:Oceana_Clinic_Management.My.MyWpfExtension.User">
+ <summary>
+ Returns information for the current user.  If you wish to run the application with the current 
+ Windows user credentials, call My.User.InitializeWithWindowsUser().
+ </summary>
+</member>
+<member name="P:Oceana_Clinic_Management.My.MyWpfExtension.Log">
+ <summary>
+ Returns the application log. The listeners can be configured by the application's configuration file.
+ </summary>
+</member>
+<member name="P:Oceana_Clinic_Management.My.MyWpfExtension.Windows">
+ <summary>
+ Returns the collection of Windows defined in the project.
+ </summary>
+</member>
+<member name="T:Oceana_Clinic_Management.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:Oceana_Clinic_Management.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:Oceana_Clinic_Management.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="T:Oceana_Clinic_Management.AdminAddUser">
+<summary>
+AdminAddUser
+</summary>
+</member>
+<member name="M:Oceana_Clinic_Management.AdminAddUser.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:Oceana_Clinic_Management.AdminHome">
+<summary>
+AdminHome
+</summary>
+</member>
+<member name="M:Oceana_Clinic_Management.AdminHome.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:Oceana_Clinic_Management.AdminResetPassword">
+<summary>
+AdminResetPassword
+</summary>
+</member>
+<member name="M:Oceana_Clinic_Management.AdminResetPassword.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:Oceana_Clinic_Management.Nurse">
+<summary>
+Nurse
+</summary>
+</member>
+<member name="M:Oceana_Clinic_Management.Nurse.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:Oceana_Clinic_Management.NurseAddPatient">
+<summary>
+NurseAddPatient
+</summary>
+</member>
+<member name="M:Oceana_Clinic_Management.NurseAddPatient.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:Oceana_Clinic_Management.NurseBilling">
+<summary>
+NurseBilling
+</summary>
+</member>
+<member name="M:Oceana_Clinic_Management.NurseBilling.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:Oceana_Clinic_Management.NurseHome">
+<summary>
+NurseHome
+</summary>
+</member>
+<member name="M:Oceana_Clinic_Management.NurseHome.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:Oceana_Clinic_Management.NursePayment">
+<summary>
+NursePayment
+</summary>
+</member>
+<member name="M:Oceana_Clinic_Management.NursePayment.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:Oceana_Clinic_Management.NursePaymentConfirmation">
+<summary>
+NursePaymentConfirmation
+</summary>
+</member>
+<member name="M:Oceana_Clinic_Management.NursePaymentConfirmation.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:Oceana_Clinic_Management.Admin">
+<summary>
+Admin
+</summary>
+</member>
+<member name="M:Oceana_Clinic_Management.Admin.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:Oceana_Clinic_Management.Application">
+<summary>
+Application
+</summary>
+</member>
+<member name="M:Oceana_Clinic_Management.Application.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="M:Oceana_Clinic_Management.Application.Main">
+<summary>
+Application Entry Point.
+</summary>
+</member>
+<member name="T:Oceana_Clinic_Management.Doctor">
+<summary>
+Doctor
+</summary>
+</member>
+<member name="M:Oceana_Clinic_Management.Doctor.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:Oceana_Clinic_Management.DoctorAddRecord">
+<summary>
+DoctorAddRecord
+</summary>
+</member>
+<member name="M:Oceana_Clinic_Management.DoctorAddRecord.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:Oceana_Clinic_Management.DoctorHome">
+<summary>
+DoctorHome
+</summary>
+</member>
+<member name="M:Oceana_Clinic_Management.DoctorHome.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:Oceana_Clinic_Management.MainWindow">
+<summary>
+MainWindow
+</summary>
+</member>
+<member name="M:Oceana_Clinic_Management.MainWindow.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+</members>
+</doc>

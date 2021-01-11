@@ -1,0 +1,114 @@
+﻿<Window x:Class="Doctor"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Oceana_Clinic_Management"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Background="#FFECECEC"
+        FontFamily="{materialDesign:MaterialDesignFont}"
+        mc:Ignorable="d"
+        Title="Doctor" Height="710" Width="1202.625" WindowStyle="None" ResizeMode="CanResizeWithGrip" AllowsTransparency="True" >
+
+    <Grid>
+        <!--Menu Grid-->
+        <Grid Height="710" Width="238" HorizontalAlignment="Left">
+
+            <!--Blue Menu Tile-->
+            <materialDesign:ColorZone
+            Height="710"
+            Width="238"
+            materialDesign:ShadowAssist.ShadowDepth="Depth5"
+            Background="#FF586FFF">
+            </materialDesign:ColorZone>
+
+            <!--Oceana Logo-->
+            <Image Source="Oceana Mini.png" Margin="7,54,10,608"  />
+
+            <!--Doctor Username-->
+            <TextBlock 
+                x:Name="txtDisplayname"
+                FontSize="25" 
+                FontWeight="Bold" 
+                Foreground="White" 
+                HorizontalAlignment="Center" 
+                Margin="38,154,38,526">
+                Doctor Sars
+            </TextBlock>
+            
+            <!--Usertype Chip-->
+            <materialDesign:Chip 
+            FontWeight="Light"
+            FontSize="18"
+            Width="104"
+            Height="29"
+            Background="White"
+            Foreground="#FF7084FF"
+            HorizontalAlignment="Center" Margin="67,210,67,470">
+                <Grid>
+                    <TextBlock 
+                    Text="Doctor" 
+                    TextAlignment="Center"
+                    FontSize="18" 
+                    FontWeight="Light" 
+                    VerticalAlignment="Center" 
+                    HorizontalAlignment="Center" 
+                    Margin="16,0,12,0"/>
+                </Grid>
+            </materialDesign:Chip>
+
+            <!--Home Button-->
+            <Button
+                x:Name="btnHome"
+                Style="{StaticResource MaterialDesignFlatButton}"
+                Height="32"
+                Width="90"
+                FontSize="20"
+                FontWeight="Bold"
+                Foreground="White" Margin="56,306,92,372" 
+                Click="btnHome_Click">
+                    Home
+            </Button>
+
+            <!--Add Record Button-->
+            <Button
+                x:Name="btnAddRecord"
+                Style="{StaticResource MaterialDesignFlatButton}"
+                Height="32"
+                Width="140"
+                FontSize="20"
+                FontWeight="Bold"
+                Foreground="White" Margin="39,377,21,301" 
+                Click="btnAddRecord_Click">
+                  Add Record
+            </Button>
+
+            <!--Logout Button-->
+            <Button
+                x:Name="btnLogout"
+                Style="{StaticResource MaterialDesignFlatButton}"
+                Height="32"
+                Width="100"
+                FontSize="20"
+                FontWeight="Bold"
+                Foreground="White" Margin="44,638,94,40" 
+                Click="btnLogout_Click">
+                  Logout
+            </Button>
+
+            <!--Home , Add Record and Logout icons-->
+            <materialDesign:PackIcon Kind="HomeOutline" Foreground="White" Height="40" Width="40" Margin="18,298,0,0"/>
+            <materialDesign:PackIcon Kind="AccountAdd"  Foreground="White" Height="38" Width="38" Margin="16,371,0,0"/>
+            <materialDesign:PackIcon Kind="Logout"  Foreground="White" Height="38" Width="38" Margin="144,636,0,0"/>
+
+            <!--User Control Grid-->
+            <Grid x:Name="MainPage" Height="710" Width="965" HorizontalAlignment="Center" Margin="238,0,-965,0">
+
+                <!--Loading DoctorHome User Control-->
+                <local:DoctorHome></local:DoctorHome>
+            </Grid>
+
+        </Grid>
+    </Grid>
+
+</Window>

@@ -1,0 +1,85 @@
+﻿<UserControl x:Class="DoctorHome"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Oceana_Clinic_Management"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             Background="#FFECECEC"
+             FontFamily="{materialDesign:MaterialDesignFont}"
+             mc:Ignorable="d" 
+             d:DesignHeight="710" d:DesignWidth="965">
+
+    <Grid>
+        <!--Header Shape-->
+        <Ellipse Fill="#FF586FFF" Margin="0,0,0,600"/>
+        <Rectangle Fill="#FF586FFF" Margin="0,0,0,656"/>
+
+        <!--Heading Title-->
+        <TextBlock FontSize="45" FontWeight="ExtraBold" Foreground="White" HorizontalAlignment="Center" Margin="282,32,273,600" Width="410">
+            Treatment Record
+        </TextBlock>
+
+        <!--Card for Datagrid-->
+        <materialDesign:Card
+            Background="White" 
+            Margin="20,140,22,32"
+            materialDesign:ShadowAssist.ShadowDepth="Depth2"/>
+
+        <!--Datagrid for displaying treatment records-->
+        <DataGrid x:Name="dgUserList" 
+                  Background="White"
+                  CanUserSortColumns="True"
+                  CanUserAddRows="False"
+                  SelectionMode="Single"
+                  AutoGenerateColumns="True"
+                  Margin="22,140,22,32">
+
+            <!--Datagrid Header Style-->
+            <DataGrid.ColumnHeaderStyle>
+                <Style BasedOn="{StaticResource MaterialDesignDataGridColumnHeader}" TargetType="DataGridColumnHeader">
+                    <Setter Property="FontSize" Value="20"/>
+                </Style>
+            </DataGrid.ColumnHeaderStyle>
+
+        </DataGrid>
+
+        <!--Delete Floating Action Button-->
+        <Button 
+            x:Name="btnDelete"
+            Style="{StaticResource MaterialDesignFloatingActionLightButton}" 
+            Background="#FF586FFF" 
+            BorderBrush="{x:Null}" 
+            materialDesign:ShadowAssist.ShadowDepth="Depth3" 
+            Margin="851,582,58,72">
+
+            <materialDesign:PackIcon
+                Kind="DeleteEmptyOutline"
+                Height="30"
+                Width="30"
+                Foreground="White"/>
+        </Button>
+
+        <!--Edit Floating Action Button-->
+        <Button 
+            x:Name="btnEdit"
+            Style="{StaticResource MaterialDesignFloatingActionLightButton}" 
+            Background="#FF586FFF" 
+            BorderBrush="{x:Null}" 
+            materialDesign:ShadowAssist.ShadowDepth="Depth3" 
+            Margin="851,502,58,152">
+
+            <materialDesign:PackIcon
+                Kind="EditOutline"
+                Height="30"
+                Width="30"
+                Foreground="White"/>
+        </Button>
+
+        <!--Message snackbar-->
+        <materialDesign:Snackbar
+            x:Name="msgSnackbar"
+            Margin="336,0,341,0"/>
+        
+    </Grid>
+</UserControl>

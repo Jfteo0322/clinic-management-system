@@ -1,0 +1,153 @@
+﻿<UserControl x:Class="DoctorAddRecord"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Oceana_Clinic_Management"
+              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             Background="#FFECECEC"
+             FontFamily="{materialDesign:MaterialDesignFont}"
+             mc:Ignorable="d" 
+             d:DesignHeight="710" d:DesignWidth="965">
+
+    <Grid>
+        <!--Header Shape-->
+        <Ellipse Fill="#FF586FFF" Margin="0,0,0,600"/>
+        <Rectangle Fill="#FF586FFF" Margin="0,0,0,656"/>
+
+        <!--Heading Title-->
+        <TextBlock FontSize="45" 
+                   FontWeight="ExtraBold" 
+                   Foreground="White" 
+                   HorizontalAlignment="Center" 
+                   Width="355" 
+                   Margin="305,28,305,628" >
+            New Treatment
+        </TextBlock>
+
+        <!--Select User Card Background-->
+        <materialDesign:Card 
+            Width="500" 
+            Background="White"
+            HorizontalAlignment="Center"
+            UniformCornerRadius="7"
+            materialDesign:ShadowAssist.ShadowDepth="Depth2" Margin="238,140,227,504">
+
+            <!--Select User Combobox-->
+            <ComboBox
+                x:Name="cboSelectPatient"
+                materialDesign:HintAssist.Hint="Select Patient"
+                FontSize="20"
+                Foreground="#FF616161"
+                Width="314"
+                HorizontalAlignment="Center"
+                Style="{StaticResource MaterialDesignFloatingHintComboBox}" 
+                Margin="105,7,81,11">
+            </ComboBox>
+        </materialDesign:Card>
+
+        <!--Treatment Details Card-->
+        <materialDesign:Card 
+            Width="850"
+            Background="White"
+            UniformCornerRadius="7"
+            materialDesign:ShadowAssist.ShadowDepth="Depth2" Margin="58,233,57,45">
+
+            <!--Add Button-->
+            <Button
+                x:Name="btnAddTreatment"
+                Style="{StaticResource MaterialDesignRaisedDarkButton}"
+                Height="50"
+                Width="300"
+                Background="#FF586FFF"
+                HorizontalAlignment="Center"
+                materialDesign:ShadowAssist.ShadowDepth="Depth3"
+                materialDesign:ButtonAssist.CornerRadius="25" 
+                Margin="293,331,257,51" 
+                Click="btnAddTreatment_Click" >
+
+                <TextBlock Text="Add" FontWeight="Bold" FontSize="20" />
+            </Button>
+        </materialDesign:Card>
+
+
+        <!--Doctor appointment text-->
+        <TextBlock 
+            FontSize="30"
+            FontWeight="Light" Margin="361,260,341,412"
+            Foreground="#FF616161">
+            Doctor Appointment
+        </TextBlock>
+
+        <!--Select Service Combobox-->
+        <ComboBox
+            x:Name="cboSelectServices"
+            materialDesign:HintAssist.Hint="Select Service"
+            FontSize="20"
+            Foreground="#FF616161"
+            Width="300"
+            HorizontalAlignment="Center"
+            Margin="278,320,387,354" >
+        </ComboBox>
+
+        <!--Service Quantity Textbox-->
+        <TextBox
+            x:Name="txtServiceQuantity"
+            FontSize="20"
+            FontWeight="Regular"    
+            Foreground="#FF616161"
+            Width="90"
+            materialDesign:HintAssist.Hint="Quantity"
+            HorizontalAlignment="Center" 
+            Margin="608,320,267,354" />
+
+        <!--Select Medicine Combobox-->
+        <ComboBox
+            x:Name="cboSelectMedicine"
+            materialDesign:HintAssist.Hint="Select Medicine"
+            FontSize="20"
+            Foreground="#FF616161"
+            Width="300"
+            HorizontalAlignment="Center"
+            Margin="278,386,387,288" >
+        </ComboBox>
+
+        <!--Medicine Quantity Textbox-->
+        <TextBox
+            x:Name="txtMedicineQuantity"
+            FontSize="20"
+            FontWeight="Regular"    
+            Foreground="#FF616161"
+            Width="90"
+            materialDesign:HintAssist.Hint="Quantity"
+            HorizontalAlignment="Center" Margin="608,386,267,288" />
+
+        <!--Diagnosis Textbox-->
+        <TextBox
+            x:Name="txtDiagnosis"
+            FontSize="20"
+            FontWeight="Regular"   
+            TextWrapping="Wrap"
+            Foreground="#FF616161"
+            Width="421"
+            materialDesign:HintAssist.Hint="Diagnosis"
+            HorizontalAlignment="Center" 
+            Margin="278,461,266,213" RenderTransformOrigin="0.5,0.5" >
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.139"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+
+        <!--Message snackbar-->
+        <materialDesign:Snackbar
+            x:Name="msgSnackbar"
+            Margin="360,0,317,0"/>
+
+    </Grid>
+
+</UserControl>

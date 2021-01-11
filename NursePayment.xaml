@@ -1,0 +1,203 @@
+﻿<UserControl x:Class="NursePayment"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Oceana_Clinic_Management"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             Background="#FFECECEC"
+             FontFamily="{materialDesign:MaterialDesignFont}"
+             mc:Ignorable="d" 
+             d:DesignHeight="710" d:DesignWidth="965">
+
+    <Grid>
+        <!--Header Shape-->
+        <Ellipse Fill="#FF586FFF" Margin="0,0,0,600"/>
+        <Rectangle Fill="#FF586FFF" Margin="0,0,0,656"/>
+
+        <!--Heading Title-->
+        <TextBlock FontSize="45" FontWeight="ExtraBold" Foreground="White" HorizontalAlignment="Center" Width="202" Margin="382,28,381,628">
+            Payment
+        </TextBlock>
+
+        <!--Select User Card Background-->
+        <materialDesign:Card 
+            Width="500" 
+            Background="White"
+            HorizontalAlignment="Center"
+            UniformCornerRadius="7"
+            materialDesign:ShadowAssist.ShadowDepth="Depth3" Margin="239,154,226,484">
+
+            <!--Select User Combobox-->
+            <ComboBox
+                x:Name="cboSelectTreatmentID"
+                materialDesign:HintAssist.Hint="Select Treatment ID" 
+                FontSize="20"
+                Foreground="#FF616161"
+                Width="364"
+                HorizontalAlignment="Center"
+                Style="{StaticResource MaterialDesignFloatingHintComboBox}" 
+                Margin="73,10,63,14" 
+                Height="48" >
+            </ComboBox>
+        </materialDesign:Card>
+
+        <!--Checkout Items Card-->
+        <materialDesign:Card 
+            Width="500"
+            Background="White"
+            HorizontalAlignment="Center"
+            UniformCornerRadius="7"
+            materialDesign:ShadowAssist.ShadowDepth="Depth3" Margin="56,268,409,48">
+
+            <!--Medical Treatment Text-->
+            <TextBlock Text="Medical Treatment" FontWeight="Bold" Foreground="#FF586FFF" FontSize="28" HorizontalAlignment="Center" Margin="140,30,104,324" Width="256"/>
+        </materialDesign:Card>
+
+
+        <!--Total Charges Card-->
+        <materialDesign:Card  
+            Width="350"
+            Background="White"
+            HorizontalAlignment="Center"
+            UniformCornerRadius="7"
+            materialDesign:ShadowAssist.ShadowDepth="Depth3" Margin="587,268,28,253">
+
+            <!--Payment Summary Text-->
+            <TextBlock Text="Payment Summary" FontWeight="Bold" Foreground="#FF586FFF" FontSize="28" HorizontalAlignment="Center" Margin="52,22,42,130" Width="256"/>
+        </materialDesign:Card>
+
+        <!--Subtotal Text-->
+        <TextBlock Text="Invoice No." FontWeight="Bold" Foreground="#FF616161" FontSize="18" Margin="642,349,226,339"/>
+
+        <!--Total Text-->
+        <TextBlock Text="Total" FontWeight="Bold" Foreground="#FF616161" FontSize="21" Margin="690,396,227,292"/>
+
+        <!--Payment Amount Textbox-->
+        <TextBox
+            x:Name="txtAmountPaid"
+            Style="{StaticResource MaterialDesignFilledTextFieldTextBox}"
+            VerticalAlignment="Top"
+            TextAlignment="Center"
+            MaxWidth="400"
+            FontWeight="Regular"
+            FontSize="20"
+            Background="White"
+            materialDesign:ShadowAssist.ShadowDepth="Depth3" 
+            materialDesign:HintAssist.Hint="Enter Payment Amount" 
+            Margin="575,494,40,0" Height="70"/>
+
+        <!--Pay Button-->
+        <Button
+            Style="{StaticResource MaterialDesignRaisedDarkButton}"
+            Height="50"
+            Width="236"
+            Background="#FF586FFF"
+            HorizontalAlignment="Center"
+            materialDesign:ShadowAssist.ShadowDepth="Depth3"
+            materialDesign:ButtonAssist.CornerRadius="25" 
+            Margin="661,595,68,65" Click="Button_Click">
+
+            <TextBlock Text="Pay" FontWeight="Bold" FontSize="20" />
+        </Button>
+
+        <!--InvoiceID Text-->
+        <TextBlock 
+            x:Name="lblInvoiceID"
+            TextAlignment="Center"
+            Text="" 
+            FontWeight="Regular" 
+            Foreground="#FF616161" 
+            FontSize="20" 
+            Margin="757,348,108,335"/>
+
+        <!--Total Amount Text-->
+        <TextBlock
+            x:Name="lblRM"
+            Text="" 
+            FontWeight="Regular" 
+            Foreground="#FF616161" 
+            FontSize="30" 
+            Margin="759,391,50,273" />
+
+        <!--Total Amount Text-->
+        <TextBlock
+            x:Name="lblTotal"
+            Text="" 
+            FontWeight="Regular" 
+            Foreground="#FF616161" 
+            FontSize="30" 
+            Margin="811,391,28,273" />
+
+        <!--Service Text-->
+        <TextBlock 
+            x:Name="lblService"
+            Text=""
+            TextAlignment="Center"
+            TextWrapping="Wrap"
+            FontWeight="Regular" 
+            Foreground="#FF616161" 
+            FontSize="25" 
+            Margin="82,360,591,289" 
+            RenderTransformOrigin="-4.812,0.068"/>
+
+        <!--Medicine Text-->
+        <TextBlock 
+            x:Name="lblMedicine"
+            Text="" 
+            TextAlignment="Center"
+            FontWeight="Regular" 
+            Foreground="#FF616161" 
+            FontSize="25" 
+            Margin="82,434,623,244" 
+            RenderTransformOrigin="-4.812,0.068"/>
+
+        <!--Medicine Price Text-->
+        <TextBlock
+            x:Name="lblMedicinePrice"
+            Text="" 
+            FontWeight="Regular" 
+            Foreground="#FF616161" 
+            FontSize="30" 
+            Margin="395,431,430,233" />
+
+        <!--Service Price Text-->
+        <TextBlock
+            x:Name="lblServicePrice"
+            Text="" 
+            FontWeight="Regular" 
+            Foreground="#FF616161" 
+            FontSize="30" 
+            Margin="395,359,430,305" />
+
+        <!--Message snackbar-->
+        <materialDesign:Snackbar
+            x:Name="msgSnackbar"
+            IsActive="True"
+            HorizontalAlignment="Center" Margin="336,0,341,0"/>
+        
+        <!--Doctor consultation text-->
+        <TextBlock 
+            x:Name="lblDoctorConsultation"
+            Text=""
+            TextAlignment="Center"
+            TextWrapping="Wrap"
+            FontWeight="Regular" 
+            Foreground="#FF616161" 
+            FontSize="25" 
+            Margin="82,496,591,153" 
+            RenderTransformOrigin="-4.812,0.068"/>
+        
+        <!--Doctor consultation price text-->
+        <TextBlock
+            x:Name="lblConsultationCost"
+            Text="" 
+            FontWeight="Regular" 
+            Foreground="#FF616161" 
+            FontSize="30" 
+            Margin="395,495,430,169" />
+
+
+    </Grid>
+
+</UserControl>

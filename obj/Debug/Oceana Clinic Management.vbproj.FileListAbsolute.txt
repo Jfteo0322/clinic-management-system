@@ -1,0 +1,101 @@
+D:\VB Sources\Oceana Clinic Management\bin\Debug\Oceana Clinic Management.exe.config
+D:\VB Sources\Oceana Clinic Management\bin\Debug\Oceana Clinic Management.exe
+D:\VB Sources\Oceana Clinic Management\bin\Debug\Oceana Clinic Management.pdb
+D:\VB Sources\Oceana Clinic Management\bin\Debug\Oceana Clinic Management.xml
+D:\VB Sources\Oceana Clinic Management\bin\Debug\MaterialDesignColors.dll
+D:\VB Sources\Oceana Clinic Management\bin\Debug\MaterialDesignThemes.Wpf.dll
+D:\VB Sources\Oceana Clinic Management\bin\Debug\MaterialDesignColors.pdb
+D:\VB Sources\Oceana Clinic Management\bin\Debug\MaterialDesignThemes.Wpf.pdb
+D:\VB Sources\Oceana Clinic Management\bin\Debug\MaterialDesignThemes.Wpf.xml
+D:\VB Sources\Oceana Clinic Management\obj\Debug\Application.g.vb
+D:\VB Sources\Oceana Clinic Management\obj\Debug\Oceana Clinic Management_MarkupCompile.cache
+D:\VB Sources\Oceana Clinic Management\obj\Debug\Oceana Clinic Management_MarkupCompile.lref
+D:\VB Sources\Oceana Clinic Management\obj\Debug\Application.baml
+D:\VB Sources\Oceana Clinic Management\obj\Debug\Oceana Clinic Management.g.resources
+D:\VB Sources\Oceana Clinic Management\obj\Debug\Oceana_Clinic_Management.Resources.resources
+D:\VB Sources\Oceana Clinic Management\obj\Debug\Oceana Clinic Management.vbproj.GenerateResource.cache
+D:\VB Sources\Oceana Clinic Management\obj\Debug\Oceana Clinic Management.vbproj.CopyComplete
+D:\VB Sources\Oceana Clinic Management\obj\Debug\Oceana Clinic Management.exe
+D:\VB Sources\Oceana Clinic Management\obj\Debug\Oceana Clinic Management.xml
+D:\VB Sources\Oceana Clinic Management\obj\Debug\Oceana Clinic Management.pdb
+D:\VB Sources\Oceana Clinic Management\obj\Debug\Admin.g.vb
+D:\VB Sources\Oceana Clinic Management\obj\Debug\Admin.baml
+D:\VB Sources\Oceana Clinic Management\obj\Debug\GeneratedInternalTypeHelper.g.vb
+D:\VB Sources\Oceana Clinic Management\obj\Debug\AdminHome.g.vb
+D:\VB Sources\Oceana Clinic Management\obj\Debug\AdminHome.baml
+D:\VB Sources\Oceana Clinic Management\obj\Debug\Login.g.vb
+D:\VB Sources\Oceana Clinic Management\obj\Debug\AdminResetPassword.g.vb
+D:\VB Sources\Oceana Clinic Management\obj\Debug\Login.baml
+D:\VB Sources\Oceana Clinic Management\obj\Debug\AdminResetPassword.baml
+D:\VB Sources\Oceana Clinic Management\obj\Debug\Doctor.g.vb
+D:\VB Sources\Oceana Clinic Management\obj\Debug\Doctor.baml
+D:\VB Sources\Oceana Clinic Management\obj\Debug\DoctorHome.g.vb
+D:\VB Sources\Oceana Clinic Management\obj\Debug\DoctorHome.baml
+D:\VB Sources\Oceana Clinic Management\obj\Debug\DoctorAddRecord.g.vb
+D:\VB Sources\Oceana Clinic Management\obj\Debug\DoctorAddRecord.baml
+D:\VB Sources\Oceana Clinic Management\obj\Debug\Nurse.g.vb
+D:\VB Sources\Oceana Clinic Management\obj\Debug\Nurse.baml
+D:\VB Sources\Oceana Clinic Management\obj\Debug\NurseHome.g.vb
+D:\VB Sources\Oceana Clinic Management\obj\Debug\NurseHome.baml
+D:\VB Sources\Oceana Clinic Management\obj\Debug\NurseBilling.g.vb
+D:\VB Sources\Oceana Clinic Management\obj\Debug\NursePayment.g.vb
+D:\VB Sources\Oceana Clinic Management\obj\Debug\NurseBilling.baml
+D:\VB Sources\Oceana Clinic Management\obj\Debug\NursePayment.baml
+D:\VB Sources\Oceana Clinic Management\obj\Debug\Oceana Clinic Management.vbprojAssemblyReference.cache
+D:\VB Sources\Oceana Clinic Management\obj\Debug\AdminAddUser.g.vb
+D:\VB Sources\Oceana Clinic Management\obj\Debug\AdminAddUser.baml
+D:\VB Sources\Oceana Clinic Management\obj\Debug\NurseAddPatient.g.vb
+D:\VB Sources\Oceana Clinic Management\obj\Debug\NurseAddPatient.baml
+D:\VB Sources\Oceana Clinic Management\obj\Debug\NursePaymentConfirmation.g.vb
+D:\VB Sources\Oceana Clinic Management\obj\Debug\NursePaymentConfirmation.baml
+C:\Users\Anonymous\Desktop\Oceana Clinic Management\bin\Debug\Oceana Clinic Management.exe.config
+C:\Users\Anonymous\Desktop\Oceana Clinic Management\bin\Debug\Oceana Clinic Management.exe
+C:\Users\Anonymous\Desktop\Oceana Clinic Management\bin\Debug\Oceana Clinic Management.pdb
+C:\Users\Anonymous\Desktop\Oceana Clinic Management\bin\Debug\Oceana Clinic Management.xml
+C:\Users\Anonymous\Desktop\Oceana Clinic Management\bin\Debug\MaterialDesignColors.dll
+C:\Users\Anonymous\Desktop\Oceana Clinic Management\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\Anonymous\Desktop\Oceana Clinic Management\bin\Debug\MaterialDesignColors.pdb
+C:\Users\Anonymous\Desktop\Oceana Clinic Management\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\Anonymous\Desktop\Oceana Clinic Management\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\Anonymous\Desktop\Oceana Clinic Management\obj\Debug\Oceana Clinic Management.vbprojAssemblyReference.cache
+C:\Users\Anonymous\Desktop\Oceana Clinic Management\obj\Debug\Admin.g.vb
+C:\Users\Anonymous\Desktop\Oceana Clinic Management\obj\Debug\AdminAddUser.g.vb
+C:\Users\Anonymous\Desktop\Oceana Clinic Management\obj\Debug\AdminHome.g.vb
+C:\Users\Anonymous\Desktop\Oceana Clinic Management\obj\Debug\Doctor.g.vb
+C:\Users\Anonymous\Desktop\Oceana Clinic Management\obj\Debug\DoctorAddRecord.g.vb
+C:\Users\Anonymous\Desktop\Oceana Clinic Management\obj\Debug\DoctorHome.g.vb
+C:\Users\Anonymous\Desktop\Oceana Clinic Management\obj\Debug\Login.g.vb
+C:\Users\Anonymous\Desktop\Oceana Clinic Management\obj\Debug\AdminResetPassword.g.vb
+C:\Users\Anonymous\Desktop\Oceana Clinic Management\obj\Debug\Nurse.g.vb
+C:\Users\Anonymous\Desktop\Oceana Clinic Management\obj\Debug\NurseAddPatient.g.vb
+C:\Users\Anonymous\Desktop\Oceana Clinic Management\obj\Debug\NurseBilling.g.vb
+C:\Users\Anonymous\Desktop\Oceana Clinic Management\obj\Debug\NurseHome.g.vb
+C:\Users\Anonymous\Desktop\Oceana Clinic Management\obj\Debug\NursePayment.g.vb
+C:\Users\Anonymous\Desktop\Oceana Clinic Management\obj\Debug\NursePaymentConfirmation.g.vb
+C:\Users\Anonymous\Desktop\Oceana Clinic Management\obj\Debug\Application.g.vb
+C:\Users\Anonymous\Desktop\Oceana Clinic Management\obj\Debug\GeneratedInternalTypeHelper.g.vb
+C:\Users\Anonymous\Desktop\Oceana Clinic Management\obj\Debug\Oceana Clinic Management_MarkupCompile.cache
+C:\Users\Anonymous\Desktop\Oceana Clinic Management\obj\Debug\Oceana Clinic Management_MarkupCompile.lref
+C:\Users\Anonymous\Desktop\Oceana Clinic Management\obj\Debug\Application.baml
+C:\Users\Anonymous\Desktop\Oceana Clinic Management\obj\Debug\Admin.baml
+C:\Users\Anonymous\Desktop\Oceana Clinic Management\obj\Debug\AdminAddUser.baml
+C:\Users\Anonymous\Desktop\Oceana Clinic Management\obj\Debug\AdminHome.baml
+C:\Users\Anonymous\Desktop\Oceana Clinic Management\obj\Debug\Doctor.baml
+C:\Users\Anonymous\Desktop\Oceana Clinic Management\obj\Debug\DoctorAddRecord.baml
+C:\Users\Anonymous\Desktop\Oceana Clinic Management\obj\Debug\DoctorHome.baml
+C:\Users\Anonymous\Desktop\Oceana Clinic Management\obj\Debug\Login.baml
+C:\Users\Anonymous\Desktop\Oceana Clinic Management\obj\Debug\AdminResetPassword.baml
+C:\Users\Anonymous\Desktop\Oceana Clinic Management\obj\Debug\Nurse.baml
+C:\Users\Anonymous\Desktop\Oceana Clinic Management\obj\Debug\NurseAddPatient.baml
+C:\Users\Anonymous\Desktop\Oceana Clinic Management\obj\Debug\NurseBilling.baml
+C:\Users\Anonymous\Desktop\Oceana Clinic Management\obj\Debug\NurseHome.baml
+C:\Users\Anonymous\Desktop\Oceana Clinic Management\obj\Debug\NursePayment.baml
+C:\Users\Anonymous\Desktop\Oceana Clinic Management\obj\Debug\NursePaymentConfirmation.baml
+C:\Users\Anonymous\Desktop\Oceana Clinic Management\obj\Debug\Oceana Clinic Management.g.resources
+C:\Users\Anonymous\Desktop\Oceana Clinic Management\obj\Debug\Oceana_Clinic_Management.Resources.resources
+C:\Users\Anonymous\Desktop\Oceana Clinic Management\obj\Debug\Oceana Clinic Management.vbproj.GenerateResource.cache
+C:\Users\Anonymous\Desktop\Oceana Clinic Management\obj\Debug\Oceana Clinic Management.vbproj.CoreCompileInputs.cache
+C:\Users\Anonymous\Desktop\Oceana Clinic Management\obj\Debug\Oceana Clinic Management.vbproj.CopyComplete
+C:\Users\Anonymous\Desktop\Oceana Clinic Management\obj\Debug\Oceana Clinic Management.exe
+C:\Users\Anonymous\Desktop\Oceana Clinic Management\obj\Debug\Oceana Clinic Management.xml
+C:\Users\Anonymous\Desktop\Oceana Clinic Management\obj\Debug\Oceana Clinic Management.pdb

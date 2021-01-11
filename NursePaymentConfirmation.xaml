@@ -1,0 +1,120 @@
+﻿<Window x:Class="NursePaymentConfirmation"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Oceana_Clinic_Management"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Background="#FFECECEC"
+        FontFamily="{materialDesign:MaterialDesignFont}"
+        mc:Ignorable="d" Height="521" Width="401" ResizeMode="NoResize" WindowStartupLocation="CenterOwner" WindowStyle="None">
+
+    <Grid>
+
+        <!--Header Shape-->
+        <Ellipse Fill="#FF586FFF" Margin="0,218,0,242"/>
+        <Rectangle Fill="#FF586FFF" Margin="0,0,0,272"/>
+
+        <!--Heading Title-->
+        <TextBlock FontSize="28" 
+                   Foreground="White"
+                   FontWeight="Light" 
+                   HorizontalAlignment="Center"
+                   Width="246" Margin="88,97,67,348">
+                   Payment Succesful !
+        </TextBlock>
+
+        <!--Tick icon-->
+        <materialDesign:PackIcon 
+            Kind="Tick" 
+            Height="112"
+            Width="85"
+            Foreground="White" Margin="169,-2,0,0"/>
+
+        <!--Card Background-->
+        <materialDesign:Card 
+            Width="290" 
+            Background="White"
+            HorizontalAlignment="Center"
+            UniformCornerRadius="7"
+            materialDesign:ShadowAssist.ShadowDepth="Depth2" Margin="59,151,52,130"/>
+
+        <!--InvoiceID Text-->
+        <TextBlock 
+            x:Name="lblInvoiceID"
+            Text="#OC500" 
+            TextAlignment="Center"
+            FontWeight="Bold" 
+            Foreground="#FF616161" 
+            FontSize="25" Margin="130,181,118,278"/>
+
+        <!--Amount Paid Text-->
+        <TextBlock 
+            x:Name="lblChange"
+            Text="Change" 
+            TextAlignment="Center"
+            FontWeight="Regular" 
+            Foreground="#FF616161" 
+            FontSize="20" Margin="97,309,205,183"/>
+
+        <!--Total Text-->
+        <TextBlock 
+            x:Name="lblTotal"
+            Text="Total" 
+            TextAlignment="Center"
+            FontWeight="Regular" 
+            Foreground="#FF616161" 
+            FontSize="18" Margin="67,231,241,249"/>
+
+        <!--Change Text-->
+        <TextBlock 
+            x:Name="lblPaid"
+            Text="Amount Paid" 
+            TextAlignment="Center"
+            FontWeight="Regular" 
+            Foreground="#FF616161" 
+            FontSize="18" Margin="68,261,179,219"/>
+
+        <!--Paid Amount Text-->
+        <TextBlock 
+            x:Name="lblPaidAmt"
+            Text="RM 100" 
+            FontWeight="Regular" 
+            Foreground="#FF616161" 
+            FontSize="18" Margin="229,261,57,234"/>
+
+        <!-- Amount Text-->
+        <TextBlock 
+            x:Name="lblTotalAmt"
+            Text="RM 100" 
+            FontWeight="Regular" 
+            Foreground="#FF616161" 
+            FontSize="18" Margin="229,232,57,263"/>
+
+        <!--Change Amount Text-->
+        <TextBlock 
+            x:Name="lblChangeAmt"
+            Text="RM 100" 
+            TextAlignment="Center"
+            FontWeight="Regular" 
+            Foreground="#FF616161" 
+            FontSize="30" Margin="203,306,68,177"/>
+
+        <!--Close Button-->
+        <Button
+            x:Name="btnClose"
+            Style="{StaticResource MaterialDesignRaisedDarkButton}"
+            Height="Auto"
+            Width="208"
+            Background="#FF586FFF"
+            HorizontalAlignment="Center"
+            materialDesign:ShadowAssist.ShadowDepth="Depth3"
+            materialDesign:ButtonAssist.CornerRadius="25" Margin="106,431,87,44">
+
+            <TextBlock Text="Yay" FontWeight="Bold" FontSize="20" />
+        </Button>
+
+    </Grid>
+</Window>
+    
+

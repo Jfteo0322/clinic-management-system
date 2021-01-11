@@ -1,0 +1,187 @@
+﻿<UserControl x:Class="NurseAddPatient"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Oceana_Clinic_Management"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             Background="#FFECECEC"
+             FontFamily="{materialDesign:MaterialDesignFont}"
+             mc:Ignorable="d" 
+             d:DesignHeight="710" d:DesignWidth="965">
+
+    <!--Main Grid-->
+    <Grid Width="965" Height="710">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="87*"/>
+            <RowDefinition Height="268*"/>
+        </Grid.RowDefinitions>
+
+        <!--Header Shape-->
+        <Ellipse Fill="#FF586FFF" Margin="0,0,0,70"/>
+        <Rectangle Fill="#FF586FFF" Margin="0,0,0,119"/>
+
+        <!--Heading Title-->
+        <TextBlock FontSize="45" 
+                   FontWeight="ExtraBold" 
+                   Foreground="White" 
+                   HorizontalAlignment="Center" 
+                   Margin="350,32,343,64" Width="272">
+                   Add Patient
+        </TextBlock>
+
+        <!--Add Patient Card-->
+        <materialDesign:Card
+            Background="White"
+            UniformCornerRadius="7"
+            materialDesign:ShadowAssist.ShadowDepth="Depth2" Margin="57,125,54,28" Grid.RowSpan="2"/>
+
+        <!--Personal details text-->
+        <TextBlock 
+            FontSize="30"
+            FontWeight="Regular" 
+            Foreground="#FF616161" Margin="356,144,387,533" Grid.RowSpan="2" RenderTransformOrigin="0.399,0.636">
+            Personal Details
+        </TextBlock>
+
+        <!--Medical Information text-->
+        <TextBlock 
+            FontSize="30"
+            FontWeight="Regular"  
+            Foreground="#FF616161" Margin="339,213,316,269" Grid.Row="1">
+            Medical Information
+        </TextBlock>
+
+        <!--IC Number textbox-->
+        <TextBox
+            x:Name="txtICNumber"
+            materialDesign:HintAssist.Hint="IC Number"
+            FontSize="20"
+            FontWeight="Regular"    
+            Foreground="#FF616161"
+            Style="{StaticResource MaterialDesignFloatingHintTextBox}"
+            Margin="171,4,512,484" 
+            Grid.Row="1" />
+
+        <!--Name textbox-->
+        <TextBox
+            x:Name="txtName"
+            materialDesign:HintAssist.Hint="Name"
+            FontSize="20"
+            FontWeight="Regular"    
+            Foreground="#FF616161"
+            Style="{StaticResource MaterialDesignFloatingHintTextBox}"
+            Margin="523,4,160,484" 
+            Grid.Row="1" />
+
+        <!--DOB textbox-->
+        <TextBox
+            x:Name="txtDateofBirth"
+            materialDesign:HintAssist.Hint="Date of Birth"
+            FontSize="20"
+            FontWeight="Regular"    
+            Foreground="#FF616161"
+            Style="{StaticResource MaterialDesignFloatingHintTextBox}"
+            Margin="171,64,512,424" 
+            Grid.Row="1" />
+
+        <!--Select gender combobox-->
+        <ComboBox
+            x:Name="cboGender"
+            materialDesign:HintAssist.Hint="Gender"
+            FontSize="20"
+            Foreground="#FF616161"
+            Width="282"
+            HorizontalAlignment="Center" Margin="523,74,160,424" Grid.Row="1" Height="38">
+        </ComboBox>
+
+        <!--Email textbox-->
+        <TextBox
+            x:Name="txtEmail"
+            materialDesign:HintAssist.Hint="Email"
+            FontSize="20"
+            FontWeight="Regular"    
+            Foreground="#FF616161"
+            Style="{StaticResource MaterialDesignFloatingHintTextBox}"
+            Margin="171,132,512,356" 
+            Grid.Row="1" />
+
+        <!--Contact number textbox-->
+        <TextBox
+            x:Name="txtContact"
+            materialDesign:HintAssist.Hint="Contact Number"
+            FontSize="20"
+            FontWeight="Regular"    
+            Foreground="#FF616161"
+            Style="{StaticResource MaterialDesignFloatingHintTextBox}"
+            Margin="523,132,160,356" 
+            Grid.Row="1" />
+
+        <!--Weight textbox-->
+        <TextBox
+            x:Name="txtWeight"
+            materialDesign:HintAssist.Hint="Weight (kg)"
+            FontSize="20"
+            FontWeight="Regular"    
+            Foreground="#FF616161"
+            Style="{StaticResource MaterialDesignFloatingHintTextBox}"
+            Margin="165,261,518,227" 
+            Grid.Row="1" />
+
+        <!--Height textbox-->
+        <TextBox
+            x:Name="txtHeight"
+            materialDesign:HintAssist.Hint="Height (cm)"
+            FontSize="20"
+            FontWeight="Regular"    
+            Foreground="#FF616161"
+            Style="{StaticResource MaterialDesignFloatingHintTextBox}"
+            Margin="165,323,518,165" 
+            Grid.Row="1" />
+
+        <!--Select blood type combobox-->
+        <ComboBox
+            x:Name="cboBloodType"
+            materialDesign:HintAssist.Hint="BloodType"
+            FontSize="20"
+            Foreground="#FF616161"
+            Width="282"
+            HorizontalAlignment="Center" Margin="517,271,166,227" Grid.Row="1" Height="38">
+        </ComboBox>
+
+        <!--Allergy textbox-->
+        <TextBox
+            x:Name="txtAllergy"
+            materialDesign:HintAssist.Hint="Allergies ( if any )"
+            FontSize="20"
+            FontWeight="Regular"    
+            Foreground="#FF616161"
+            Style="{StaticResource MaterialDesignFloatingHintTextBox}"
+            Margin="517,323,166,165" 
+            Grid.Row="1" />
+
+        <!--Add User Button-->
+        <Button
+            x:Name="btnAddUser"
+            Style="{StaticResource MaterialDesignRaisedDarkButton}"
+            Height="50"
+            Width="300"
+            Background="#FF586FFF"
+            HorizontalAlignment="Center"
+            materialDesign:ShadowAssist.ShadowDepth="Depth3"
+            materialDesign:ButtonAssist.CornerRadius="25" 
+            Margin="332,414,333,72" Grid.Row="1">
+
+            <!--Button text-->
+            <TextBlock Text="Add Patient" FontWeight="Bold" FontSize="20" />
+        </Button>
+
+        <!--Message snackbar-->
+        <materialDesign:Snackbar
+            x:Name="msgSnackbar"
+            Margin="339,0,338,0" 
+            Grid.Row="1"/>
+
+    </Grid>
+
+</UserControl>
